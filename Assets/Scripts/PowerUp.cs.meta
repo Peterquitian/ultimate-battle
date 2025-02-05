@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/PowerUp.cs.meta
+guid: 55e384c21c8522948b50b47737d8cb05
+========
+guid: 69957d586a25c9743b2eec6d4486f6a0
+>>>>>>>> origin/Ana:Assets/Scripts/ActivarObjetos.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
