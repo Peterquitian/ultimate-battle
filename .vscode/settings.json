@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "PecesVsPiratas.sln"
+    "dotnet.defaultSolution": "ultimate-battle.sln"
 }

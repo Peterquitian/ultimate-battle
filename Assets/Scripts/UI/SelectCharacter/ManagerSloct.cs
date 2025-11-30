@@ -74,6 +74,12 @@ public class ManagerSloct : MonoBehaviour
         _characterInfoDisplay.UpdateInfoCharacterDisplay(_currentSloct.Character);
     }
 
+    public void BuyCharacter(Sloct sloct)
+    {
+        _currentSloct = sloct;
+        UpdateCurrentSloct(sloct);
+    }
+
     public void AddCharacter(Sloct sloct)
     {
         Character character = sloct.Character;

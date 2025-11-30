@@ -130,7 +130,7 @@ namespace TMPro.Examples
 
                     // Determine the random scale change for each character.
                     float randomScale = Random.Range(1f, 1.5f);
-                    
+
                     // Add modified scale and index
                     modifiedCharScale.Add(randomScale);
                     scaleSortingOrder.Add(modifiedCharScale.Count - 1);
@@ -150,9 +150,8 @@ namespace TMPro.Examples
                     destinationVertices[vertexIndex + 3] += offset;
 
                     // Restore Source UVS which have been modified by the sorting
-                    Vector2[] sourceUVs0 = cachedMeshInfoVertexData[materialIndex].uvs0;
-                    Vector2[] destinationUVs0 = textInfo.meshInfo[materialIndex].uvs0;
-
+                    Vector4[] sourceUVs0 = cachedMeshInfoVertexData[materialIndex].uvs0;
+                    Vector4[] destinationUVs0 = textInfo.meshInfo[materialIndex].uvs0;
                     destinationUVs0[vertexIndex + 0] = sourceUVs0[vertexIndex + 0];
                     destinationUVs0[vertexIndex + 1] = sourceUVs0[vertexIndex + 1];
                     destinationUVs0[vertexIndex + 2] = sourceUVs0[vertexIndex + 2];
@@ -171,14 +170,23 @@ namespace TMPro.Examples
                 // Push changes into meshes
                 for (int i = 0; i < textInfo.meshInfo.Length; i++)
                 {
-                    //// Sort Quads based modified scale
+                    // Ordena los quads según la escala modificada
                     scaleSortingOrder.Sort((a, b) => modifiedCharScale[a].CompareTo(modifiedCharScale[b]));
 
                     textInfo.meshInfo[i].SortGeometry(scaleSortingOrder);
 
-                    // Updated modified vertex attributes
+                    // Actualiza los atributos de los vértices modificados
                     textInfo.meshInfo[i].mesh.vertices = textInfo.meshInfo[i].vertices;
-                    textInfo.meshInfo[i].mesh.uv = textInfo.meshInfo[i].uvs0;
+
+                    // Convierte uvs0 (Vector4[]) a Vector2[] para asignar a mesh.uv
+                    Vector4[] tempUVs = textInfo.meshInfo[i].uvs0;
+                    Vector2[] uvs2D = new Vector2[tempUVs.Length];
+                    for (int j = 0; j < tempUVs.Length; j++)
+                    {
+                        uvs2D[j] = new Vector2(tempUVs[j].x, tempUVs[j].y);
+                    }
+                    textInfo.meshInfo[i].mesh.uv = uvs2D;
+
                     textInfo.meshInfo[i].mesh.colors32 = textInfo.meshInfo[i].colors32;
 
                     m_TextComponent.UpdateGeometry(textInfo.meshInfo[i].mesh, i);
