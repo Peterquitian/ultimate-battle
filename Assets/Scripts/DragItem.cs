@@ -38,7 +38,7 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition = eventData.delta / _rectTransform.localScale.x;
+        _rectTransform.anchoredPosition += eventData.delta / _rectTransform.localScale.x;
     }
 
     public void OnEndDrag(PointerEventData eventData)

@@ -1230,6 +1230,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 1
 --- !u!1 &166702122
 GameObject:
@@ -1413,6 +1414,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 1
 --- !u!1 &179760887
 GameObject:
@@ -1996,6 +1998,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 0
 --- !u!1 &268941501
 GameObject:
@@ -5673,6 +5676,7 @@ GameObject:
   - component: {fileID: 807688510}
   - component: {fileID: 807688515}
   - component: {fileID: 807688513}
+  - component: {fileID: 807688517}
   - component: {fileID: 807688516}
   m_Layer: 5
   m_Name: Image
@@ -5814,7 +5818,23 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 0
+--- !u!114 &807688517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807688508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606808606abe96f41aa465b120076225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasGroup: {fileID: 0}
+  _rectTransform: {fileID: 0}
+  _defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &827103316
 GameObject:
   m_ObjectHideFlags: 0
@@ -6231,6 +6251,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 1
 --- !u!1 &853034620
 GameObject:
@@ -10615,6 +10636,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 0
 --- !u!1 &1137302487
 GameObject:
@@ -12803,6 +12825,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 0
 --- !u!1 &1280969617
 GameObject:
@@ -16174,6 +16197,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 0
 --- !u!1 &1481257470
 GameObject:
@@ -17300,6 +17324,7 @@ GameObject:
   - component: {fileID: 1671490732}
   - component: {fileID: 1671490730}
   - component: {fileID: 1671490729}
+  - component: {fileID: 1671490734}
   - component: {fileID: 1671490733}
   m_Layer: 5
   m_Name: Image
@@ -17468,7 +17493,23 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 1
+--- !u!114 &1671490734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671490725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606808606abe96f41aa465b120076225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasGroup: {fileID: 0}
+  _rectTransform: {fileID: 0}
+  _defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1684346777
 GameObject:
   m_ObjectHideFlags: 0
@@ -17651,6 +17692,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 1
 --- !u!1 &1705543153
 GameObject:
@@ -19146,6 +19188,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 0
 --- !u!1 &1936812977
 GameObject:
@@ -19329,6 +19372,7 @@ MonoBehaviour:
   _imgCharacter: {fileID: 0}
   _character: {fileID: 0}
   _managerSloct: {fileID: 0}
+  _DefaultPosition: {x: 0, y: 0, z: 0}
   InBuyCar: 1
 --- !u!1 &1950307458
 GameObject:
